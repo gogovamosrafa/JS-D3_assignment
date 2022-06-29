@@ -1,0 +1,53 @@
+svg, .scatter-plot-container{
+    border: 1px solid #ccc;
+    position: absolute;
+}
+
+.container{
+    display: flex;
+}
+
+
+
+.selected-container{
+    display: flex;
+    flex-direction:column;
+    margin-left:1rem;
+    margin-left:35em;
+    
+
+    
+}
+
+.selected-header{
+    background: #f0f0f0;
+    color:#777;
+    padding:0.5rem 2rem;
+    text-align:center;
+}
+.axis .domain{
+    stroke: noe;
+
+}
+
+.x line{
+    stroke: white;
+}
+
+.select-title{
+    font-weight:bold;
+}
+
+.selected-element{
+    margin: 0.5em;
+    padding:0.5em;
+    transition: background-color 200ms ease;
+}
+.select-element:hover{
+    background-color: #f0f0f0;
+}
+.select-body{
+    overflow: auto;
+    font-size: 0.8 em;
+    cursor: default;
+}

@@ -1,0 +1,12 @@
+svg{
+    border: 1px solid #ccc;
+}
+
+.axis .domain{
+    stroke: noe;
+
+}
+
+.x line{
+    stroke: white;
+}

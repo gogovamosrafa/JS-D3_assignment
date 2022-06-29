@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>電影類型與收益</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link href="../bootstrap-5.1.1-dist/css/bootstrap.css" rel="stylesheet">
+        <title>電影分類與收益動態圖</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-light" style="background-color: #FFB6BB;">
+                <div class="container-fluid">
+                  <a class="navbar-brand">Explore</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" href="../index.html" style="color: gray">Home</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: gray;">
+                          JavaScript
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #FFEFF4;">
+                          <li><a class="dropdown-item" href="../eat_tonight/index.html" style="color:gray">今天晚餐吃什麼</a></li>
+                          <li><a class="dropdown-item" href="../club/index.html" style="color:gray">社團課程時間表</a></li>
+                          <li><a class="dropdown-item" href="../playList/index.html" style="color:gray">Youtube 好味小姐Podcast精選點唱機</a></li>
+                          <li><a class="dropdown-item" href="../mindTest/index.html" style="color:gray">心理測驗</a></li>
+                          <li><a class="dropdown-item"  href="../RPG/index.html" style="color:gray">簡易RPG</a></li>
+                        </ul>
+                      </li>
+
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          D3.js
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #FFEFF4;">
+                          <li><a class="dropdown-item" href="../genre_revenue_bar/index.html" style="color:gray">電影分類與收益長條圖</a></li>
+                          <li><a class="dropdown-item" href="../budget_revenue_scatter/index.html" style="color:gray">電影預算與收益散佈圖</a></li>
+                          <li><a class="dropdown-item" href="../budget_and_revenue_linechart/index.html" style="color:gray">電影預算與收益折線圖</a></li>
+                          <li><a class="dropdown-item" href="../data_revised/index.html" style="color:gray">水果清單更新</a></li>
+                          <li><a class="dropdown-item"  href="../genre_revenue_bar_active/index.html" style="color:gray">電影分類與收益動態圖</a></li>
+                          <li><a class="dropdown-item" href="../budget_revenue_scatter_active/index.html">電影預算與收益動態圖</a></li>
+                        </ul>
+                      </li>
+
+                    </ul>
+
+                  </div>
+                </div>
+              </nav>
+        </header>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="container">
+        <div class="scatter-plot-container"></div>
+        <div class="selected-container">
+                <div class="selected-header">Selected Element</div>
+                <div class="selected-body"></div>
+
+        </div>
+        </div>
+        <script src="//unpkg.com/d3"></script>
+        <script src="main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../bootstrap-5.1.1-dist/js/bootstrap.bundle.js"></script>
+    </body>
+</html>
